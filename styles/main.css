@@ -1,0 +1,99 @@
+.dashboard-container {
+    padding: 20px 0;
+}
+
+.dashboard-box {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.box-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.box-content {
+    padding: 20px;
+}
+
+.user-info {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+
+.nav-link.active {
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* Dashboard Cards */
+.dashboard-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    height: 100%;
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+.card-icon i {
+    font-size: 24px;
+    color: white;
+}
+
+.dashboard-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.dashboard-card p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Background colors for card icons */
+.bg-primary { background: #7c4dff; }
+.bg-success { background: #4CAF50; }
+.bg-info { background: #2196F3; }
+.bg-warning { background: #FFC107; }
+
+/* Activity List */
+.list-group-item {
+    border-left: none;
+    border-right: none;
+}
+
+.list-group-item:first-child {
+    border-top: none;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+/* Navbar active state */
+.nav-link.active {
+    background: rgba(124, 77, 255, 0.1);
+    color: #7c4dff !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dashboard-card {
+        margin-bottom: 20px;
+    }
+} 

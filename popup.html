@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mail.Enc</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-rbsA2VBKQvCl2p91f2Cjm42M9pXUhbZIxmyhk/3Wvs/wWlvgF4PcI8RG9iLBrsJZ"
+    crossorigin="anonymous"
+  >
+  <!-- FontAwesome for Icons -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+  >
+  <!-- Custom Styles -->
+  <style>
+    body {
+      background-color: #f8f9fa;
+      color: #212529;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 10px;
+    }
+    .popup-container {
+      width: 300px;
+      padding: 15px;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .header img {
+      height: 40px;
+    }
+    .header .settings {
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: #6c757d;
+    }
+    .list-group-item {
+      border: none;
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+    }
+    .list-group-item:hover {
+      background-color: #f1f1f1;
+      cursor: pointer;
+    }
+    .icon {
+      font-size: 1.5rem;
+      color: #0056b3;
+      margin-right: 15px;
+    }
+    .footer {
+      margin-top: 15px;
+    }
+    .footer .btn {
+      width: 100%;
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+    .footer .btn-light {
+      background-color: #ffffff;
+      border: 1px solid #ced4da;
+    }
+  </style>
+</head>
+<body>
+  <div class="popup-container">
+    <!-- Header -->
+    <div class="header">
+      <img src="assets/icon.png" alt="Mail.Enc Logo">
+      <div>
+        <i class="fas fa-cog settings"></i>
+      </div>
+    </div>
+
+    <!-- Options -->
+    <ul class="list-group">
+      <li class="list-group-item" id="dashboard">
+        <i class="fas fa-th-large icon"></i>
+        <div>
+          <strong>Dashboard</strong><br>
+          <small>Display all configuration options.</small>
+        </div>
+      </li>
+      <li class="list-group-item" id="keyring">
+        <i class="fas fa-key icon"></i>
+        <div>
+          <strong>Keyring</strong><br>
+          <small>Manage public and private keys.</small>
+        </div>
+      </li>
+      <li class="list-group-item" id="file-encryption">
+        <i class="fas fa-file-alt icon"></i>
+        <div>
+          <strong>File Encryption</strong><br>
+          <small>Encrypt one or multiple files.</small>
+        </div>
+      </li>
+      <li class="list-group-item" id="security-log">
+        <i class="fas fa-shield-alt icon"></i>
+        <div>
+          <strong>Security Log</strong><br>
+          <small>Review security relevant user actions.</small>
+        </div>
+      </li>
+    </ul>
+
+    <!-- Footer -->
+    <div class="footer">
+      <button class="btn btn-light" id="reload">Reload Mail.Enc</button>
+      <button class="btn btn-secondary mt-2" id="authorize">Authorize this domain</button>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kQTA75kYJQnL/JpQRFyrq85Pe8kkx0af7aamTVj1ANiJ6lr4YnbEK7tPXikDy1zB"
+    crossorigin="anonymous"
+  ></script>
+  <!-- Custom Script -->
+  <script src="popup.js"></script>
+</body>
+</html>

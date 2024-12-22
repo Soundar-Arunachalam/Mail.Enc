@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Key</title>
+    <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/generatekey.css">
+  <script src="https://cdn.jsdelivr.net/npm/openpgp@5.11.0/dist/openpgp.min.js"></script>
+</head>
+<body>
+     <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg" style="box-shadow:10px 5px 15px grey;">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/icon.png" alt="Logo" height="40" class="me-2">
+        <span>Mail.Enc</span>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-key me-2"></i>Key Management
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-lock me-2"></i>Encrypt
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-unlock me-2"></i>Decrypt
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-cog me-2"></i>Options
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="components">
+        <div class="box">
+            <i class ="fa-solid " id="movetokeymanagement" style="color:rgb(15, 12, 187);"> < Key Management</i>
+            <h1>Generate Key</h1>
+            <form id="form" >
+                <div class="form-box">
+                    
+
+                    
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input class="form-control" id="name" type="text" name="Name">
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="form-control" id="email" type="email" name="Email">
+                      </div>
+                      <button type="button" id="toggleButton" > << Advanced </button>
+
+                      <div id="Slider" class="slide-up">
+                        <div>
+                          <p class="contents">
+                            <label>
+                                Algorithm
+                            </label>
+                            <select class="form-select" id="Algorithm" aria-label="Default select example">
+                               
+                                <option value="RSA">RSA</option>
+                                <option value="ECC-curve25519">ECC-curve25519</option>
+                             
+                            </select>
+                            <label >
+                                key expiration date
+                            </label>
+                            <br>
+                            <input type="date" id ="expiry-data">
+                          </p>
+                          
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="message">password</label>
+                        <input class="form-control" id="password" type="password" name="Name">
+                      
+                      </div>
+                      <div class="form-group">
+                        <label for="">confirm password</label>
+                      <input class="form-control" id="confirm-password" type="password" name="Name">
+                    </div>
+                    <div class="form-group">
+                      <input class="btn btn-primary" type="submit" value="Submit" />
+                    </div>
+                      
+                    
+            </form>
+        </div>
+
+        </div>
+        <script src="openpgp.min.js"></script>
+
+        <script  type="module" src="generatekey.js" ></script>
+</body>
+</html>
