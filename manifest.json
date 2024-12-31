@@ -1,0 +1,31 @@
+{
+    "name":"Mail.Enc",
+    "version":"1.0.0",
+    "description":"A extension for providing end to end encryption and mainly a email utility software to get read receipts",
+    "author":"@Soundar-Arunachalam",
+    "manifest_version":3,
+    "action":{
+        "default_icon":{
+            "16":"img/Mail.Enc/icon.png",
+            "32":"img/Mail.Enc/icon.png",
+            "64":"img/Mail.Enc/icon.png",
+            "128":"img/Mail.Enc/icon.png"
+        },
+        "default-popup":"components/action-menu/actionMenu.html",
+        "default-title":"Mail.Enc"
+
+    },
+    "background":{
+        "service-worker":"background.bundle.js"
+    },
+    "content_security_policy":{
+        "extension_pages":"default-src 'self';style-src 'unsafe-inline';img-src data:;connect-src https:;"
+    },
+    "default_locale":"en",
+    "host_permissions":[
+        "*://*/*"
+    ],
+    "oauth2":{
+        "client_id":"119074447949-cvf"
+    }
+}
