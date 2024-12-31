@@ -25,7 +25,51 @@
     "host_permissions":[
         "*://*/*"
     ],
-    "oauth2":{
-        "client_id":"119074447949-cvf"
-    }
+    "optional_permissions":[
+        "nativeMessaging"
+    ],
+    "options_page":"app/app.html",
+    "permissions":[
+        "identity",
+        "offscreen",
+        "scripting",
+        "storage",
+        "tabs",
+        "webNavigation"
+    ],
+    "web_accessible_resources":[{
+        "resources":[
+            "app/app.html",
+            "client-API/Mail.Enc-client-api.js",
+            "components/decrypt-message/decryptMessage.html",
+            "components/generate-key/genKey.html",
+            "components/key-backup/backupKey.html",
+            "components/restore-backup/backupRestore.html",
+            "components/editor/editor.html",
+            "components/encrypted-form/encrypted-form.html",
+            "res/fonts/*.woff2",
+            "img/edit_add-22.png",
+            "img/key-24.png",
+            "img/key-icon-blue-86.png",
+            "img/loading.gif",
+            "img/mail_locked_96.png",
+            "img/mail-signed_96.png",
+            "img/mail_open_96.png",
+            "img/mail_new.png",
+            "img/ok48.png",
+            "img/verify-24.png",
+            "main.css"
+        ],
+       "matches":["*://*/*"]
+    }],
+    "oauth2": {
+    "client_id": "119074447949-cvf898un7sfnv2ib7r4hvunqd56jm4c4.apps.googleusercontent.com",
+    "scopes":[
+      "https://www.googleapis.com/auth/userinfo.email",
+      "https://www.googleapis.com/auth/gmail.readonly",
+      "https://www.googleapis.com/auth/gmail.send"
+    ]
+  }
+
+    
 }
