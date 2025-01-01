@@ -1,0 +1,7 @@
+.key-advanced-open::before {
+    content: '<< ';
+  }
+  
+  .key-advanced-closed::after {
+    content: ' >>';
+  }
