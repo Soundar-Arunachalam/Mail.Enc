@@ -3,7 +3,7 @@
  * Licensed under the GNU Affero General Public License version 3
  */
 
- .keyUsers .table>tbody>tr {
+.keyUsers .table>tbody>tr {
     cursor: pointer;
 }
 

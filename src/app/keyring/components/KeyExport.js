@@ -108,6 +108,14 @@ export default class KeyExport extends React.Component {
                     <input type="radio" name="public" defaultChecked={this.state.type === 'pub'} />
                     {l10n.map.keyring_public}
                   </label>
+                  <label className={`btn btn-${this.state.type === 'priv' ? 'primary' : 'secondary'} w-100`} onClick={() => this.handleTypeChange('priv')}>
+                    <input type="radio" name="private" defaultChecked={this.state.type === 'priv'} />
+                    {l10n.map.keyring_private}
+                  </label>
+                  <label className={`btn btn-${this.state.type === 'all' ? 'primary' : 'secondary'} w-100`} onClick={() => this.handleTypeChange('all')}>
+                    <input type="radio" name="all" defaultChecked={this.state.type === 'all'} />
+                    {l10n.map.keygrid_all_keys}
+                  </label>
                 </div>
               </div>
             }

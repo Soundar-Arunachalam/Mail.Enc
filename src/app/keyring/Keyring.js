@@ -149,3 +149,4 @@ Keyring.propTypes = {
   prefs: PropTypes.object,
   location: PropTypes.object
 };
+

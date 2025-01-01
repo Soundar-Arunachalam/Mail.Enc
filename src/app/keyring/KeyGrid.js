@@ -178,11 +178,15 @@ export default class KeyGrid extends React.Component {
             <Link className="btn btn-secondary" to="/keyring/import" replace tabIndex="0" title={l10n.map.keygrid_import_title}>
               <span className="icon icon-download" aria-hidden="true"></span> {l10n.map.form_import}
             </Link>
-           
+            <Link className={`btn btn-secondary ${this.context.demail ? 'd-none' : ''}`} to="/keyring/import/search" replace tabIndex="0" title={l10n.map.keygrid_import_search_title}>
+              <span className="icon icon-search" aria-hidden="true"></span> {l10n.map.key_import_search_btn}
+            </Link>
             <button type="button" onClick={() => this.openExportKeyringDialog()} className="btn btn-secondary" title={l10n.map.keygrid_export_title}>
               <span className="icon icon-upload" aria-hidden="true"></span> {l10n.map.keygrid_export}
             </button>
-           
+            <button type="button" onClick={this.props.onRefreshKeyring} className="btn btn-secondary" title={l10n.map.keygrid_refresh_title}>
+              <span className="icon icon-refresh" aria-hidden="true"></span> {l10n.map.keygrid_refresh}
+            </button>
           </div>
           <div>
             <label htmlFor="keyringFilterBtn" className="keyringFilterLabel mr-1">
@@ -230,8 +234,7 @@ export default class KeyGrid extends React.Component {
             </tbody>
           </table>
         </div>
-        {//this.props.spinner && <Spinner delay={0} />
-        }
+        {this.props.spinner && <Spinner delay={0} />}
         <SimpleDialog
           isOpen={this.state.showDeleteKeyModal}
           toggle={() => this.setState(prevState => ({showDeleteKeyModal: !prevState.showDeleteKeyModal}))}

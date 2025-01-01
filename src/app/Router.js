@@ -1,17 +1,20 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import {HashRouter} from "react-router-dom"
-import App from "./app"
+/**
+ * Mailvelope - secure email with OpenPGP encryption for Webmail
+ * Copyright (C) 2017 Mailvelope GmbH
+ */
 
-document.addEventListener('DOMContentLoaded',init);
-function init(){
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {HashRouter} from 'react-router-dom';
+import App from './app';
 
-    const root=document.createElement("div");
-    ReactDOM.render((
+document.addEventListener('DOMContentLoaded', init);
 
-        <HashRouter>
-            <App/>
-        </HashRouter>
-    ),document.body.appendChild(root)
-    );
+function init() {
+  const root = document.createElement('div');
+  ReactDOM.render((
+    <HashRouter>
+      <App />
+    </HashRouter>
+  ), document.body.appendChild(root));
 }
