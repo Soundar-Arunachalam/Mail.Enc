@@ -82,7 +82,7 @@ function FileDownloadElement({file, onClick, onCopyToClipboard}) {
   return (
     <div className="file-element">
       <a className="file-header" onClick={onClick} title={file.name} download={file.name} href={file.objectURL || '#'}>
-        {(fileExt === 'asc' || fileExt === 'gpg' || fileExt === 'pgp') && <img src="../../img/Mailvelope/logo_signet.svg" width="28" height="28" />}
+        {(fileExt === 'asc' || fileExt === 'gpg' || fileExt === 'pgp') && <img src="../../img/Mail.Enc/logo.png" width="28" height="28" />}
         <span className="file-extension">{fileExt}</span>
         <span className="file-name">{fileName}</span>
         {file.objectURL &&

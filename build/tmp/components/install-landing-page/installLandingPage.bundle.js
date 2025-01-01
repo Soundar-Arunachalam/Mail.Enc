@@ -25,7 +25,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `body{background-image:url(${___CSS_LOADER_URL_REPLACEMENT_0___});background-color:#caebdd;background-repeat:repeat}#help-text{position:absolute;top:50px;right:6%;width:250px;font-family:"Montserrat","Poppins",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:1.09375rem;font-weight:500;color:#617a70}.jumbotron{background-color:#fff;box-shadow:0 5px 15px 0 rgba(64,64,64,0.2),0 0 2px 0 rgba(64,64,64,0.2)}@media (min-width: 768px){.jumbotron{padding:4rem 6rem}.jumbotron img{width:336px}}@media (max-width: 991.98px){.jumbotron{padding:2rem 3rem}.jumbotron img{width:200px}}@media (min-width: 768px){#arrow{padding-right:5rem;padding-top:2rem;padding-left:2rem;padding-bottom:5.5rem}#arrow img{height:400px}}@media (max-width: 991.98px){#arrow{padding-right:4rem;padding-top:2rem;padding-left:1.5rem;padding-bottom:3rem}#arrow img{height:200px}}
+___CSS_LOADER_EXPORT___.push([module.id, `body{background-image:url(${___CSS_LOADER_URL_REPLACEMENT_0___});background-color:#caebdd;background-repeat:repeat}#help-text{position:absolute;top:50px;right:6%;width:250px;font-family:CeraRoundPro,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1.09375rem;font-weight:500;color:#617a70}.jumbotron{background-color:#fff;box-shadow:0 5px 15px 0 rgba(64,64,64,0.2),0 0 2px 0 rgba(64,64,64,0.2)}@media (min-width: 768px){.jumbotron{padding:4rem 6rem}.jumbotron img{width:336px}}@media (max-width: 991.98px){.jumbotron{padding:2rem 3rem}.jumbotron img{width:200px}}@media (min-width: 768px){#arrow{padding-right:5rem;padding-top:2rem;padding-left:2rem;padding-bottom:5.5rem}#arrow img{height:400px}}@media (max-width: 991.98px){#arrow{padding-right:4rem;padding-top:2rem;padding-left:1.5rem;padding-bottom:3rem}#arrow img{height:200px}}
 `, ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
@@ -659,15 +659,8 @@ function installLandingPage_InstallLandingPage() {
   }), /*#__PURE__*/external_React_default().createElement("div", {
     className: "jumbotron align-self-end mb-0 fle"
   }, /*#__PURE__*/external_React_default().createElement("img", {
-    src: "../../img/Mailvelope/logo.svg",
+    src: "../../img/Mail.Enc/logo.png",
     width: "336",
-    alt: ""
-  })), /*#__PURE__*/external_React_default().createElement("div", {
-    id: "arrow",
-    className: "w-100"
-  }, /*#__PURE__*/external_React_default().createElement("img", {
-    src: "../../img/Mailvelope/corner-arrow.svg",
-    width: "100%",
     alt: ""
   }))));
 }

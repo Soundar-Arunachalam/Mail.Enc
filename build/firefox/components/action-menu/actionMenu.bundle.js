@@ -20,7 +20,7 @@
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `body{padding:0px !important;margin:0px !important;width:100%}.action-menu .action-menu-wrapper{border:0;width:230px}.action-menu .action-menu-wrapper .action-menu-header{padding:0.75rem;background-color:transparent}.action-menu .action-menu-wrapper .action-menu-header .nav-right a{color:inherit}.action-menu .action-menu-wrapper .action-menu-header .nav-right a:last-child{margin-left:1rem}.action-menu .action-menu-wrapper .action-menu-content p{font-size:0.75rem;margin-bottom:0}.action-menu .action-menu-wrapper .action-menu-content .action-menu-item{position:relative;border:0;padding:0.75rem;cursor:pointer}.action-menu .action-menu-wrapper .action-menu-content .action-menu-item .action-menu-item-title{margin-bottom:0.25rem}.action-menu .action-menu-wrapper .action-menu-content .action-menu-item .action-menu-item-title img{width:24px;height:24px;margin-right:0.375rem}.action-menu .action-menu-wrapper .action-menu-content .action-menu-item .action-menu-item-title strong{font-weight:700}.action-menu .action-menu-wrapper .action-menu-content .action-menu-item ::after{content:' ';position:absolute;bottom:1px;left:50%;width:90%;height:1px;background-color:#b8c3cc;transform:translateX(-50%)}.action-menu .action-menu-wrapper .action-menu-footer{border-top:0;padding:0.75rem;background-color:transparent}
+___CSS_LOADER_EXPORT___.push([module.id, `body{padding:0px !important;margin:0px !important;width:100%}.action-menu .action-menu-wrapper{border:0;width:230px}.action-menu .action-menu-wrapper .action-menu-header{padding:0.75rem;background-color:transparent}.action-menu .action-menu-wrapper .action-menu-header .nav-right a{color:inherit}.action-menu .action-menu-wrapper .action-menu-header .nav-right a:last-child{margin-left:1rem}.action-menu .action-menu-wrapper .action-menu-content p{font-size:0.75rem;margin-bottom:0}.action-menu .action-menu-wrapper .action-menu-content .action-menu-item{position:relative;border:0;padding:0.75rem;cursor:pointer}.action-menu .action-menu-wrapper .action-menu-content .action-menu-item .action-menu-item-title{margin-bottom:0.25rem}.action-menu .action-menu-wrapper .action-menu-content .action-menu-item .action-menu-item-title img{width:24px;height:24px;margin-right:0.375rem}.action-menu .action-menu-wrapper .action-menu-content .action-menu-item .action-menu-item-title strong{font-weight:700}.action-menu .action-menu-wrapper .action-menu-content .action-menu-item ::after{content:' ';position:absolute;bottom:1px;left:50%;width:90%;height:1px;background-color:#f0f0f0;transform:translateX(-50%)}.action-menu .action-menu-wrapper .action-menu-footer{border-top:0;padding:0.75rem;background-color:transparent}
 `, ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
@@ -1435,7 +1435,7 @@ function ActionMenuSetup(props) {
     className: "mx-auto d-block mb-3",
     alt: "..."
   }), /*#__PURE__*/external_React_default().createElement("p", null, /*#__PURE__*/external_React_default().createElement(Trans, {
-    id: map.action_menu_configure_mailvelope,
+    id: "configure Mail.Enc",
     components: [/*#__PURE__*/external_React_default().createElement("strong", {
       key: "0"
     })]
@@ -1563,32 +1563,12 @@ class ActionMenuWrapper extends external_React_namespaceObject.Component {
     }, /*#__PURE__*/external_React_default().createElement("div", {
       className: "action-menu-header card-header d-flex"
     }, /*#__PURE__*/external_React_default().createElement("img", {
-      src: "../../img/Mailvelope/logo.svg",
+      src: "../../img/Mail.enc/icon.png",
       width: "111",
       height: "20",
       className: "d-inline-block mr-auto",
       alt: ""
-    }), /*#__PURE__*/external_React_default().createElement("div", {
-      className: "nav-right"
-    }, this.state.isSetupDone && /*#__PURE__*/external_React_default().createElement("a", {
-      id: "options",
-      href: "#",
-      onClick: e => this.onMenuItemClick(e),
-      tabIndex: "0",
-      title: map.action_menu_all_options
-    }, /*#__PURE__*/external_React_default().createElement("span", {
-      className: "icon icon-settings",
-      "aria-hidden": "true"
-    })), /*#__PURE__*/external_React_default().createElement("a", {
-      href: "https://www.mailvelope.com/faq",
-      target: "_blank",
-      rel: "noreferrer noopener",
-      tabIndex: "0",
-      title: map.action_menu_help
-    }, /*#__PURE__*/external_React_default().createElement("span", {
-      className: "icon icon-help",
-      "aria-hidden": "true"
-    })))), actionMenuContent));
+    })), actionMenuContent));
   }
 }
 /* harmony default export */ const components_ActionMenuWrapper = (ActionMenuWrapper);

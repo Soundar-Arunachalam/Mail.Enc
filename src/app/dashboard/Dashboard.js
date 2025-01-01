@@ -49,16 +49,7 @@ export default function Dashboard() {
             </div>
           </Link>
         </div>
-        <div className="col mb-4">
-          <Link className="card h-100" to="/settings/security-log" role="button">
-            <div className="card-body">
-              <img src="../img/Mailvelope/clipboard.svg" role="presentation" />
-            </div>
-            <div className="card-footer">
-              {l10n.map.dashboard_link_view_security_log}
-            </div>
-          </Link>
-        </div>
+       
       </div>
     </div>
   );

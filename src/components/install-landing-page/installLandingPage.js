@@ -30,11 +30,9 @@ function InstallLandingPage() {
       <div className="d-flex d-flex justify-content-center">
         <div className="w-100"></div>
         <div className="jumbotron align-self-end mb-0 fle">
-          <img src="../../img/Mailvelope/logo.svg" width="336" alt="" />
+          <img src="../../img/Mail.Enc/logo.png" width="336" alt="" />
         </div>
-        <div id="arrow" className="w-100">
-          <img src="../../img/Mailvelope/corner-arrow.svg" width="100%" alt="" />
-        </div>
+        
       </div>
     </main>
   );

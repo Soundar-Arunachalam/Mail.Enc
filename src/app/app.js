@@ -118,7 +118,8 @@ class App extends React.Component {
         <nav className="navbar flex-column fixed-top navbar-expand-md navbar-light bg-white">
           <div className="container-lg py-2">
             <Link to="/dashboard" className="navbar-brand">
-              <img src="../img/Mailvelope/logo.svg" width="175" height="32" className="d-inline-block align-top" alt="" />
+              <img src="../img/Mail.Enc/logo.png" width="175" height="32" className="d-inline-block align-top" alt="../img/Mail.Enc/logo.png" />
+              <h1>Mail.Enc</h1>
             </Link>
             <button className="navbar-toggler" type="button" onClick={this.toggleNavbar} aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
@@ -128,14 +129,11 @@ class App extends React.Component {
                 <NavLink to="/keyring">{l10n.map.keyring_header}</NavLink>
                 <NavLink to="/encrypt">{l10n.map.encrypt_home}</NavLink>
                 <NavLink to="/decrypt">{l10n.map.decrypt_home}</NavLink>
-                <NavLink to="/settings">{l10n.map.options_home}</NavLink>
+                
               </ul>
-              <ul className="navbar-nav">
-                <li className="nav-item"><a className="nav-link" href="https://www.mailvelope.com/faq" target="_blank" rel="noreferrer noopener" tabIndex="0"><span className="icon icon-help d-none d-md-inline" aria-hidden="true"></span><span className="d-md-none">{l10n.map.options_docu}</span></a></li>
-              </ul>
+              
             </Collapse>
           </div>
-          {(this.state.prefs && !this.state.prefs.security.personalized && this.props.location.pathname !== '/settings/security-background') && <div className="feature-banner d-flex align-items-center justify-content-center align-self-stretch p-3"><span className="mr-3">{l10n.map.feature_banner_new_security_background_text}</span><Link to="/settings/security-background" className="btn btn-sm btn-primary">{l10n.map.feature_banner_new_security_background_btn}</Link></div>}
         </nav>
         <main className={`container-lg ${(this.state.prefs && !this.state.prefs.security.personalized && this.props.location.pathname !== '/settings/security-background') ? 'featured' : ''}`} role="main">
           <AppOptions.Provider value={{gnupg: this.state.gnupg}}>
@@ -147,12 +145,7 @@ class App extends React.Component {
             <Route path="/analytics-consent" component={AnalyticsConsent} />
           </AppOptions.Provider>
         </main>
-        <footer className="container-lg">
-          <div className="d-flex justify-content-between">
-            <p><span className="pr-2">&copy; 2024</span><a className="text-reset" href="https://mailvelope.com/about" target="_blank" rel="noreferrer noopener" tabIndex="0">Mailvelope GmbH</a></p>
-            <p id="version" className="d-sm-none d-md-block">{this.state.version}</p>
-          </div>
-        </footer>
+        
         {this.state.terminate && <Terminate />}
       </SecurityBG>
     );
