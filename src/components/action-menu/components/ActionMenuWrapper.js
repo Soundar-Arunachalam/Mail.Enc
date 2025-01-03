@@ -59,7 +59,7 @@ class ActionMenuWrapper extends Component {
       <div className={`action-menu ${this.state.isSetupDone ? '' : 'action-menu-setup'}`}>
         <div className="action-menu-wrapper card">
           <div className="action-menu-header card-header d-flex">
-            <img src="../../img/Mail.enc/icon.png" width="111" height="20" className="d-inline-block mr-auto" alt="" />
+            <img src="../../img/Mail.enc/icon.png" width="30" height="20" className="d-inline-block mr-auto" alt="" />
             
           </div>
           {actionMenuContent}

@@ -40,7 +40,7 @@ export default function Dashboard() {
           </Link>
         </div>
         <div className="col mb-4">
-          <Link className="card h-100" to="/settings/watchlist" role="button">
+          <Link className="card h-100" to="/" role="button">
             <div className="card-body">
               <img src="../img/Mailvelope/authorized.svg" role="presentation" />
             </div>

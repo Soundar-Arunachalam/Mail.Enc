@@ -1430,11 +1430,7 @@ function ActionMenuSetup(props) {
     className: "action-menu-content card-body",
     role: "menu",
     "aria-label": map.action_menu_setup_menu_aria_label
-  }, /*#__PURE__*/external_React_default().createElement("img", {
-    src: "../../../img/Mailvelope/seal.svg",
-    className: "mx-auto d-block mb-3",
-    alt: "..."
-  }), /*#__PURE__*/external_React_default().createElement("p", null, /*#__PURE__*/external_React_default().createElement(Trans, {
+  }, /*#__PURE__*/external_React_default().createElement("p", null, /*#__PURE__*/external_React_default().createElement(Trans, {
     id: "configure Mail.Enc",
     components: [/*#__PURE__*/external_React_default().createElement("strong", {
       key: "0"
@@ -1564,7 +1560,7 @@ class ActionMenuWrapper extends external_React_namespaceObject.Component {
       className: "action-menu-header card-header d-flex"
     }, /*#__PURE__*/external_React_default().createElement("img", {
       src: "../../img/Mail.enc/icon.png",
-      width: "111",
+      width: "30",
       height: "20",
       className: "d-inline-block mr-auto",
       alt: ""

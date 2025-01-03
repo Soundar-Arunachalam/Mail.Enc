@@ -118,7 +118,7 @@ class App extends React.Component {
         <nav className="navbar flex-column fixed-top navbar-expand-md navbar-light bg-white">
           <div className="container-lg py-2">
             <Link to="/dashboard" className="navbar-brand">
-              <img src="../img/Mail.Enc/logo.png" width="175" height="32" className="d-inline-block align-top" alt="../img/Mail.Enc/logo.png" />
+              <img src="../img/Mail.Enc/logo.png" width="40" height="32" className="d-inline-block align-top" alt="../img/Mail.Enc/logo.png" />
               <h1>Mail.Enc</h1>
             </Link>
             <button className="navbar-toggler" type="button" onClick={this.toggleNavbar} aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

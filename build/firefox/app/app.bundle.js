@@ -89080,7 +89080,7 @@ class router_App extends (router_external_React_default()).Component {
       className: "navbar-brand"
     }, /*#__PURE__*/router_external_React_default().createElement("img", {
       src: "../img/Mail.Enc/logo.png",
-      width: "175",
+      width: "40",
       height: "32",
       className: "d-inline-block align-top",
       alt: "../img/Mail.Enc/logo.png"

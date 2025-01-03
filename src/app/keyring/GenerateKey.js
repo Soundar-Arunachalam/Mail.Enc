@@ -10,7 +10,7 @@ import {checkEmail} from '../../lib/util';
 import {port} from '../app';
 import {KeyringOptions} from './KeyringOptions';
 import {startOfDay, addYears, getUnixTime} from 'date-fns';
-
+import axios from "axios";
 import NameAddrInput from './components/NameAddrInput';
 import AdvancedExpand from './components/AdvancedExpand';
 import AdvKeyGenOptions from './components/AdvKeyGenOptions';
@@ -117,7 +117,13 @@ export default class GenerateKey extends React.Component {
       if (this.props.onKeyringChange) {
         await this.props.onKeyringChange();
       }
+      
       this.setState({key: newKey}, () => this.props.onNotification({id: Date.now(), header: l10n.map.alert_header_success, message: l10n.map.key_gen_success, type: 'success'}));
+      const resp=await axios.post("http://localhost:3001/add",{
+        name:this.state.name,
+        email:this.state.email,
+        publicKey:newKey
+      });
     } catch (error) {
       this.setState({generating: false, modified: false}, () => this.props.onNotification({id: Date.now(), header: l10n.map.key_gen_error, message: error.message, type: 'error'}));
     }

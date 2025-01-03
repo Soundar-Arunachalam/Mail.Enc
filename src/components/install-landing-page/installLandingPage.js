@@ -30,7 +30,7 @@ function InstallLandingPage() {
       <div className="d-flex d-flex justify-content-center">
         <div className="w-100"></div>
         <div className="jumbotron align-self-end mb-0 fle">
-          <img src="../../img/Mail.Enc/logo.png" width="336" alt="" />
+         
         </div>
         
       </div>
